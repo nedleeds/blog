@@ -1,0 +1,25 @@
+public/
+.DS_Store/
+
+# Hugo 빌드 결과물
+/public/
+
+# macOS 시스템 파일
+.DS_Store
+
+# Hugo 캐시
+/resources/_gen/
+hugo_stats.json
+
+# VSCode 등 편집기 관련
+.vscode/
+.idea/
+
+# Netlify 빌드 결과 캐시 (로컬에 남는 경우)
+.netlify/
+
+# 로그나 임시 파일
+*.log
+*.tmp
+*.swp
+

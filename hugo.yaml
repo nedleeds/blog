@@ -1,0 +1,80 @@
+baseURL: https://example.org/
+languageCode: ko-KR
+title: Will's Blog
+enableRobotsTXT: true
+hasCJKLanguage: true
+theme: hextra
+defaultContentLanguage: ko
+enableInlineShortcodes: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+  highlight:
+    noClasses: false
+
+languages:
+  ko:
+    languageName: Korean
+    weight: 1
+    title: Will's Blog
+  en:
+    languageName: English
+    weight: 2
+    title: Will's Blog
+
+menu:
+  main:
+    - identifier: tech
+      name: Tech
+      pageRef: /tech
+      weight: 1
+    - identifier: notes
+      name: Notes
+      pageRef: /notes
+      weight: 2
+    - identifier: projects
+      name: Projects
+      pageRef: /projects
+      weight: 3
+    - identifier: books
+      name: Books
+      pageRef: /books
+      weight: 4
+    - name: Search
+      weight: 5
+      params:
+        type: search
+    - name: GitHub
+      weight: 6
+      url: "https://github.com/nedleeds"
+      params:
+        icon: github
+
+params:
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: images/icon.svg
+      dark: images/icon.svg
+      link: /
+      width: 25
+      height: 20
+      params:
+
+  footer:
+    displayCopyright: false
+    displayPoweredBy: false
+
+  theme:
+    default: dark
+    displayToggle: true
+
+  copyright:
+    prefix: "Content "
+    holder: "Will"
+    startYear: "2023"
+    suffix: ""
