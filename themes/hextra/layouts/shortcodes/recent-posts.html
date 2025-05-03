@@ -1,0 +1,41 @@
+{{ $section := .Get "section" }}
+{{ $max := default 10 (.Get "max" | int) }}
+
+<div class="recent-posts">
+  {{ $pages := where .Site.RegularPages "Section" $section }}
+  {{ $filteredPages := where $pages "File.LogicalName" "ne" "state.md" }}
+  {{ $recentPages := first $max ($filteredPages.ByDate) }}
+
+  {{ $groupedPages := dict }}
+  {{ range $recentPages }}
+  {{ $parentSection := index (split .File.Dir "/") 1 }}
+  {{ $groupedPages = merge $groupedPages (dict $parentSection (slice . | append (index $groupedPages $parentSection |
+  default slice))) }}
+  {{ end }}
+
+  <style>
+  </style>
+
+  {{ range $section, $sectionPages := $groupedPages }}
+  <h3>{{ humanize $section }}</h3>
+  <ul>
+    {{ range $sectionPages }}
+    <li style="display: flex; justify-content: space-between; margin-bottom: 5px; align-items: center;">
+      <div style="display: flex; align-items: center;">
+        <a href="{{ .RelPermalink }}" class="custom-link">{{ .Title }}</a>
+        <span class="folder-tag">
+          {{ $dirParts := split (trim .File.Dir "/") "/" }}
+          {{ if ge (len $dirParts) 3 }}
+          {{ index $dirParts 2 }}
+          {{ else }}
+          {{ index $dirParts 1 }}
+          {{ end }}
+        </span>
+      </div>
+      <span class="post-date" style="display: flex; align-items: center;">{{ if not (eq .Date.Year 1) }}{{ .Date.Format
+        "2006-01-02" }}{{ else }}날짜 미설정{{ end }}</span>
+    </li>
+    {{ end }}
+  </ul>
+  {{ end }}
+</div>
