@@ -5,9 +5,7 @@ description: 로봇소프트웨어 개발자의 블로그입니다.
 ---
 
 {{< hextra/hero-container
-  style="display: flex; justify-content: center; align-items: center;"
-  image="/images/profile8.png"
-  imageWidth="100%">}}
+  image="/images/profile13.png">}}
 
 {{< hextra/hero-badge >}}Junior Developer{{< /hextra/hero-badge >}}
 
@@ -41,7 +39,7 @@ Career
 
 ### 부산대학교 AI 대학원 졸업
 
-<a href = https://github.com/nedleeds/OCTADeeplearning> 
+<a href = "https://github.com/nedleeds/OCTADeeplearning">
 {{< icon "github" >}} 3차원OCT-A 영상 기반 망막병증진단 심층학습모델연구
 </a>
 
@@ -76,14 +74,14 @@ subtitle="코드, 툴, 설정, 개발의 흔적들"
 link="/tech">}}
 
 {{< hextra/feature-card
-title="🚀 Projects"
-subtitle="토이 프로젝트, 소박한 작업들"
-link="/projects">}}
-
-{{< hextra/feature-card
 title="💡 Notes"
 subtitle="일상의 기록, 작은 생각들"
 link="/notes">}}
+
+{{< hextra/feature-card
+title="🚀 Projects"
+subtitle="토이 프로젝트, 소박한 작업들"
+link="/projects">}}
 
 {{< hextra/feature-card
 title="📚 Books"
