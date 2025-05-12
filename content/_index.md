@@ -67,25 +67,13 @@ Contents
 <br>
 
 {{< hextra/feature-grid cols="4">}}
-
-{{< hextra/feature-card
-title="💻 Tech"
-subtitle="코드, 툴, 설정, 개발의 흔적들"
-link="/tech">}}
-
-{{< hextra/feature-card
-title="💡 Notes"
-subtitle="일상의 기록, 작은 생각들"
-link="/notes">}}
-
-{{< hextra/feature-card
-title="🚀 Projects"
-subtitle="토이 프로젝트, 소박한 작업들"
-link="/projects">}}
-
-{{< hextra/feature-card
-title="📚 Books"
-subtitle="내가 읽은 책들"
-link="/books">}}
+{{< card
+  link="/tech"
+  title="Tech"
+  subtitle="코드, 툴, 설정, 개발의 흔적들"
+  image="/images/card/tech.png">}}
+{{< card link="/notes" title="Notes" image="/images/card/note.png" subtitle="일상의 기록, 작은 생각들">}}
+{{< card link="/projects" title="Projects" image="/images/card/project.png" subtitle= "토이 프로젝트, 소박한 작업들">}}
+{{< card link="/books" title="Books" image="/images/card/book.png" subtitle="" subtitle="내가 읽은 책들">}}
 
 {{< /hextra/feature-grid >}}
