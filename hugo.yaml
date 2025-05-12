@@ -71,7 +71,7 @@ params:
 
   theme:
     default: dark
-    displayToggle: true
+    displayToggle: false
 
   copyright:
     prefix: "Content "
