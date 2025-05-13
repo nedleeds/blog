@@ -58,8 +58,8 @@ params:
     displayTitle: true
     displayLogo: true
     logo:
-      path: images/icon.svg
-      dark: images/icon.svg
+      path: images/bubble.svg
+      dark: images/bubble.svg
       link: /
       width: 25
       height: 20
