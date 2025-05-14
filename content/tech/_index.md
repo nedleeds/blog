@@ -1,7 +1,7 @@
 ---
 type: docs
 scope: tech
-next: tech/state
+next: tech/language
 ---
 
 # 기술 노트 📚
@@ -10,10 +10,6 @@ next: tech/state
 
 > 혼자서 개발을 진행하며 새롭게 알게 된 부분들이나,  
 > 현재 학습 중인 내용을 정리하기 위한 페이지입니다.
-
-현재 보고 있는 쿡북을 필사하면서 공부할 수도 있고,  
-회사에서 개발 중 몰랐던 부분을 새롭게 알게 된 사항들을 기록할 수도 있으며,  
-기억해두고 싶은 기술적인 내용들을 정리할 수도 있습니다.
 
 > [!warning] 틀린 부분은 적극적인 피드백 부탁드립니다.
 
@@ -60,12 +56,14 @@ next: tech/state
   
   <!-- 오른쪽: 설명 -->
   <div style="flex: 2; display: flex; flex-direction: column; height: 100%;">
-    <ul> <br> 
+    <ul> <br>
       <li><strong>Language</strong>: 프로그래밍 언어 관련 내용들을 정리합니다.</li>
-      <li><strong>Network</strong>: 네트워크 프로그래밍 관련 내용들을 적는 정리합니다. </li> 
+      <li><strong>Network</strong>: 네트워크 프로그래밍 관련 내용들을 적는 정리합니다. </li>
       <li><strong>NVIM</strong>: Neovim 과 관련된 내용들을 정리합니다.  </li>
       <li><strong>OS</strong>: 운영체제와 관련된 내용들을 정리합니다.  </li>
       <li><strong>ENV</strong>: 개발환경 세팅과 관련된 내용들을 정리합니다.  </li>
     </ul>
   </div>
 </div>
+
+{{< recent-posts section="tech" max=9999 >}}

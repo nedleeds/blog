@@ -3,7 +3,7 @@ type: docs
 title: Languages
 date: 2025-04-07
 weight: 1
-prev: /tech/state
+prev: /tech
 sidebar:
   open: false
 ---
@@ -14,7 +14,7 @@ sidebar:
 
 ## 주요 언어
 
-- <a href="./cpp/_index.md">**C++**</a> : 성능 중심의 언어, 멀티스레딩, 메모리 관리
+- [**C++**]({{<relref "cpp/_index.md">}}): 성능 중심의 언어, 멀티스레딩, 메모리 관리
 - **Python**: 간결한 문법과 강력한 라이브러리 지원
 - **JavaScript**: 웹 개발에서 핵심적인 언어
 - **HTML & CSS**: 웹 페이지 구조 및 스타일링
