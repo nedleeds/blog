@@ -66,6 +66,6 @@ next: tech/language
   </div>
 </div>
 
-### 최근 게시글
+### 🔥 최근 게시글
 
 {{< recent-posts section="tech" max=9999 >}}
