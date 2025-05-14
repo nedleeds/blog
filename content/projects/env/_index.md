@@ -1,8 +1,7 @@
 ---
 type: docs
-title: NVIM
-weight: 1
-date: 2025-04-08
+title: env
+weight: 99
 prev: /projects
 sidebar:
   open: false
