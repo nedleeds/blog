@@ -1,5 +1,5 @@
 ---
-title: Introduction
+type: docs
 scope: books
 ---
 
