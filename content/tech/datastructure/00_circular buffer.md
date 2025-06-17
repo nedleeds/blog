@@ -14,10 +14,13 @@ prev: /tech
 
 ## 동작 요약 
 
-![Circular Buffer Animation](https://upload.wikimedia.org/wikipedia/commons/3/3f/Circular_Buffer_Animation.gif)
+## 링 버퍼 동작 애니메이션
+
+![Circular Buffer Animation](https://upload.wikimedia.org/wikipedia/commons/f/fd/Circular_Buffer_Animation.gif)  
 > 이미지 출처: [MuhannadAjjan – Wikimedia Commons](https://commons.wikimedia.org/w/index.php?curid=45368479)  
 > 라이선스: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
 
+이 애니메이션은 링 버퍼에서 read/write 포인터가 어떻게 순환하고, 어떤 조건에서 overwrite가 발생하는지를 잘 보여준다.
 - 24KB 의 키보드용 circular buffer 이미지
 - microprocessor 가 응답이 없어서, `write` pointer 가 `read` pointer 를 만날 때, buffer 는 keystroke 기록을 멈춘다.
 - keystroke 을 멈추는 것처럼 ring buffer 의 overwrite 을 방지하는 것은 어플리케이션의 기능에 따라 달라진다. 
